@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A beautiful birthday wish from Pansilu to Danu"
+    />
+    <title>Happy Birthday Danu! 💕</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Animated Background Elements -->
+    <div class="background-container">
+      <div class="floating-hearts">
+        <div class="heart heart-1">💖</div>
+        <div class="heart heart-2">💕</div>
+        <div class="heart heart-3">💗</div>
+        <div class="heart heart-4">💝</div>
+        <div class="heart heart-5">💖</div>
+        <div class="heart heart-6">💕</div>
+        <div class="heart heart-7">🎉</div>
+        <div class="heart heart-8">🎂</div>
+        <div class="heart heart-9">✨</div>
+        <div class="heart heart-10">🌟</div>
+        <div class="heart heart-11">💫</div>
+        <div class="heart heart-12">🎊</div>
+      </div>
+
+      <div class="floating-flowers">
+        <div class="flower flower-1">🌸</div>
+        <div class="flower flower-2">🌺</div>
+        <div class="flower flower-3">🌻</div>
+        <div class="flower flower-4">🌷</div>
+        <div class="flower flower-5">🌹</div>
+        <div class="flower flower-6">🌸</div>
+        <div class="flower flower-7">🦋</div>
+        <div class="flower flower-8">🌼</div>
+        <div class="flower flower-9">🌿</div>
+        <div class="flower flower-10">🍀</div>
+        <div class="flower flower-11">🌺</div>
+        <div class="flower flower-12">🌻</div>
+      </div>
+
+      <div class="particles">
+        <div class="particle">✨</div>
+        <div class="particle">⭐</div>
+        <div class="particle">💫</div>
+        <div class="particle">🌟</div>
+        <div class="particle">✨</div>
+        <div class="particle">⭐</div>
+        <div class="particle">💫</div>
+        <div class="particle">🌟</div>
+        <div class="particle">✨</div>
+        <div class="particle">⭐</div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-container">
+      <header class="header">
+        <h1 class="title">Happy Birthday</h1>
+        <h2 class="subtitle">Danu</h2>
+        <p class="from-text">From Pansilu with love 💕</p>
+      </header>
+
+      <!-- Letter/Envelope Section -->
+      <section class="letter-section">
+        <div class="envelope-container">
+          <div class="envelope" id="envelope">
+            <div class="envelope-front">
+              <div class="envelope-flap"></div>
+              <div class="envelope-body">
+                <div class="envelope-heart">💌</div>
+              </div>
+            </div>
+            <div class="envelope-back"></div>
+          </div>
+          <p class="click-hint">
+            Click the letter to read your special message
+          </p>
+        </div>
+      </section>
+
+      <!-- Birthday Message -->
+      <section class="message-section">
+        <div class="celebration-text">
+          <p>🎉 Another year of amazing memories together! 🎉</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal for Letter Content -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-content">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <div class="letter-content">
+          <div class="letter-header">
+            <h3>My Dearest Danu,</h3>
+          </div>
+          <div class="letter-body">
+            <div class="typewriter-text" id="typewriterText"></div>
+          </div>
+          <div class="letter-footer">
+            <p>With all my love,</p>
+            <p class="signature">Pansilu 💕</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Confetti Animation -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
