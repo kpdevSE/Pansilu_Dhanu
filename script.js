@@ -14,13 +14,11 @@ class BirthdayWishApp {
 
 Today marks another year of your incredible journey, and I feel so blessed to be part of it! 🌟 You bring so much joy, laughter, and happiness into my life every single day. 😊💕
 
-Your smile lights up my world ☀️, your laugh is the most beautiful music to my ears 🎵, and your friendship is one of the most precious gifts I've ever received 🎁. You make every day feel brighter just by being you! ✨
-
-I love how you see the beauty in everything 🌸, how you care so deeply for others 💝, and how you make even the simplest moments feel magical 🪄. You are my sunshine on cloudy days ☀️, my anchor in stormy seas ⚓, and my greatest adventure 🚀.
+Your friendship is one of the most precious gifts I've ever received 🎁. You make every day feel brighter just by being you! ✨
 
 As you celebrate another year of life, I want you to know that you are cherished beyond measure 💖. You deserve all the happiness 😄, success 🏆, and wonderful experiences that this new year will bring! 🌈
 
-Thank you for being the amazing person you are 🙏. Thank you for sharing your life with me 🤝. Thank you for every smile 😊, every laugh 😂, every moment we've shared together 💫.
+Thank you for being the amazing person you are 🙏. Thank you for every smile 😊, every laugh 😂, and every moment we've shared together 💫.
 
 May this new year bring you endless joy 🎊, countless adventures 🌍, and all the love your beautiful heart can hold 💕. You are truly one of a kind 🌟, and I'm so grateful to have you in my life! 🙏✨
 
@@ -71,9 +69,15 @@ I regretfully apologize for asking you so late. 😅💕`;
   }
 
   openModal() {
-    this.modal.classList.add("active");
-    this.createConfetti();
-    this.startTypewriter();
+    // Start envelope opening animation
+    this.envelope.classList.add("opening");
+
+    // Open modal after envelope animation
+    setTimeout(() => {
+      this.modal.classList.add("active");
+      this.createConfetti();
+      this.startTypewriter();
+    }, 800); // Wait for envelope animation to complete
 
     // Prevent body scroll when modal is open
     document.body.style.overflow = "hidden";
@@ -82,6 +86,9 @@ I regretfully apologize for asking you so late. 😅💕`;
   closeModal() {
     this.modal.classList.remove("active");
     this.typewriterText.textContent = "";
+
+    // Reset envelope animation
+    this.envelope.classList.remove("opening");
 
     // Restore body scroll
     document.body.style.overflow = "auto";
